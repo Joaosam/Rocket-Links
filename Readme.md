@@ -1,5 +1,5 @@
 <h1 align="center">
-  Rocket Links 🔗
+  Rocket Links 🔗💻
 </h1>
 
 <p align="center">
