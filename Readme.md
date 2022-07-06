@@ -19,7 +19,7 @@
 
 ## 🚧 Projeto
 
-A ideia desse projeto foi criar um convite para o lar em adoração
+A ideia desse projeto é criar uma página de redirecionamentos
 
 Live Preview: https://joaosam.github.io/Rocket-Links/
 
