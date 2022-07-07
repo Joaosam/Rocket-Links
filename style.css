@@ -64,6 +64,7 @@ body {
 }
 
 .profileInfos {
+  position: relative;
   transition: .5s;
   display: grid;
   place-items: center;
@@ -72,13 +73,30 @@ body {
 
 .profileInfos img {
   width: 10rem;
+  border-radius: 50%;
   padding: 0.4rem;
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+.profileInfos .border {
+  position: absolute;
+  top: -4%;
+  width: 11.2rem;
+  height: 11.2rem;
   background: 
   linear-gradient(var(--bg-body-dark-blue), var(--bg-body-dark-blue)) padding-box,
-  linear-gradient(to right, var(--color-primary-blue), darkorchid) border-box;
+  linear-gradient(to right, var(--color-primary-blue), var(--color-primary-pink)) border-box;
+  filter: blur(0.2rem);
   border-radius: 50%;
-  border: 4px solid transparent;
-  animation: rotate 5s linear infinite;
+  border: 0.4rem solid transparent;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 .profileInfos p {
@@ -157,7 +175,7 @@ body.lightBlue .profileInfos {
   color: var(--text-color-light);
 }
 
-body.lightBlue .profileInfos img {  
+body.lightBlue .profileInfos .border {
   background: 
   linear-gradient(var(--bg-body-light-blue), var(--bg-body-light-blue)) padding-box,
   linear-gradient(to right, var(--color-primary-blue), var(--color-primary-pink)) border-box;
@@ -176,7 +194,7 @@ body.darkPink {
   background-color: var(--bg-body-dark-pink);
 }
 
-body.darkPink .profileInfos img {
+body.darkPink .profileInfos .border {
   background: 
   linear-gradient(var(--bg-body-dark-pink), var(--bg-body-dark-pink)) padding-box,
   linear-gradient(to right, var(--color-primary-pink), var(--color-primary-blue)) border-box;
@@ -204,7 +222,7 @@ body.lightPink {
   background-color: var(--bg-body-light-pink);
 }
 
-body.lightPink .profileInfos img {
+body.lightPink .profileInfos .border {
   background: 
   linear-gradient(var(--bg-body-light-pink), var(--bg-body-light-pink)) padding-box,
   linear-gradient(to right, var(--color-primary-pink), var(--color-primary-blue)) border-box;
