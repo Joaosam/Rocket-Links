@@ -19,7 +19,7 @@
 
 ## 🚧 Projeto
 
-A ideia desse projeto é criar uma página de redirecionamentos
+A ideia desse projeto foi criar uma página central de redirecionamentos de links!
 
 Live Preview: https://joaosam.github.io/Rocket-Links/
 
