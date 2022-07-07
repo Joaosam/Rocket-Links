@@ -79,9 +79,16 @@ body {
   z-index: 1;
 }
 
-.profileInfos .border {
+.profileInfos p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.profileInfos::after {
+  content: '';
   position: absolute;
-  top: -4%;
+  top: -6%;
   width: 11.2rem;
   height: 11.2rem;
   background: 
@@ -97,12 +104,6 @@ body {
   to {
     transform: rotate(1turn);
   }
-}
-
-.profileInfos p {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
 }
 
 .socialLinks {
@@ -175,7 +176,7 @@ body.lightBlue .profileInfos {
   color: var(--text-color-light);
 }
 
-body.lightBlue .profileInfos .border {
+body.lightBlue .profileInfos::after {
   background: 
   linear-gradient(var(--bg-body-light-blue), var(--bg-body-light-blue)) padding-box,
   linear-gradient(to right, var(--color-primary-blue), var(--color-primary-pink)) border-box;
@@ -194,7 +195,7 @@ body.darkPink {
   background-color: var(--bg-body-dark-pink);
 }
 
-body.darkPink .profileInfos .border {
+body.darkPink .profileInfos::after {
   background: 
   linear-gradient(var(--bg-body-dark-pink), var(--bg-body-dark-pink)) padding-box,
   linear-gradient(to right, var(--color-primary-pink), var(--color-primary-blue)) border-box;
@@ -222,7 +223,7 @@ body.lightPink {
   background-color: var(--bg-body-light-pink);
 }
 
-body.lightPink .profileInfos .border {
+body.lightPink .profileInfos::after {
   background: 
   linear-gradient(var(--bg-body-light-pink), var(--bg-body-light-pink)) padding-box,
   linear-gradient(to right, var(--color-primary-pink), var(--color-primary-blue)) border-box;
